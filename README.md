@@ -47,7 +47,3 @@ YOLO 학습을 위한 데이터 전처리, 증강, 시각화, 유틸리티 코�
 `requirements.txt`
     - 프로젝트 실행에 필요한 Python 라이브러리 목록
     - `$ pip install -r requirements.txt` 설치 가능
-
-`data.yaml`
-- YOLO 학습용 데이터 구성 파일
-- train/val/test 데이터 경로, 클래스 개수(nc), 클래스 이름(names) 정의
