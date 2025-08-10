@@ -1,5 +1,7 @@
-# 🏥 Sprint AI Project
-경구약제 이미지 객체 검출(Object Detection) 프로젝트
+# 🏥 Sprint AI Project 1
+이 프로젝트는 경구 복용 의약품(정제, 캡슐 등)의 이미지를 기반으로, 개별 약제를 자동으로 식별하고 위치를 탐지하는 객체 검출(Object Detection) 시스템을 구축하는 것을 목표로 합니다.  
+
+약제의 외형, 색상, 각인, 형태 등의 시각적 특징을 활용하여 이미지 내 모든 약제 객체를 정확히 감지하고, YOLO 기반 모델을 통해 Bounding Box 좌표와 클래스(약제명)를 예측합니다.
 
 ## 📂 프로젝트 구조
 ```
@@ -41,13 +43,9 @@ YOLO 학습을 위한 데이터 전처리, 증강, 시각화, 유틸리티 코�
     - 추론 결과 저장 및 시각화
 
 `notebooks/`
-- data_preprocessing_yye.ipynb
+- data_preprocessing.ipynb
     - 개인 실험/개발용 Jupyter Notebook
     - src/ 모듈을 불러와서 데이터 전처리와 증강 실행, 시각화 테스트 등 수행
 `requirements.txt`
     - 프로젝트 실행에 필요한 Python 라이브러리 목록
     - `$ pip install -r requirements.txt` 설치 가능
-
-`data.yaml`
-- YOLO 학습용 데이터 구성 파일
-- train/val/test 데이터 경로, 클래스 개수(nc), 클래스 이름(names) 정의
