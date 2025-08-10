@@ -43,7 +43,7 @@ YOLO 학습을 위한 데이터 전처리, 증강, 시각화, 유틸리티 코�
     - 추론 결과 저장 및 시각화
 
 `notebooks/`
-- data_preprocessing_yye.ipynb
+- data_preprocessing.ipynb
     - 개인 실험/개발용 Jupyter Notebook
     - src/ 모듈을 불러와서 데이터 전처리와 증강 실행, 시각화 테스트 등 수행
 `requirements.txt`
