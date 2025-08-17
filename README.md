@@ -29,6 +29,28 @@ sprint_ai03_1/
 ```
 
 ## 📁 파일 및 디렉터리 설명
+'data/'
+YOLO 학습을 위한 데이터가 들어있는 디렉터리
+- `merge_ann/`  
+  - 병합된 COCO 어노테이션(JSON) 파일 저장 디렉터리  
+  - 여러 개의 COCO JSON 라벨 파일을 하나로 합친 결과가 들어감  
+- `images/`  
+  - 학습 및 검증에 사용되는 이미지 파일 저장 디렉터리  
+  - `train_images/`  
+    - 학습(Training)용 이미지 파일이 저장됨  
+    - YOLO 모델의 학습 과정에서 입력 데이터로 사용  
+  - `val_images/`  
+    - 검증(Validation)용 이미지 파일이 저장됨  
+    - 학습 도중 모델의 성능을 평가하기 위한 데이터셋  
+- `labels/`  
+  - YOLO 포맷(`.txt`) 라벨 파일 저장 디렉터리  
+  - `train_images/`  
+    - 학습용 이미지(`images/train_images/`)에 해당하는 YOLO 라벨 파일 저장  
+    - 각 파일은 동일한 이름의 이미지에 대한 바운딩박스 좌표 및 클래스 정보 포함  
+  - `val_images/`  
+    - 검증용 이미지(`images/val_images/`)에 해당하는 YOLO 라벨 파일 저장  
+    - 모델의 성능 평가에 사용되는 GT(Ground Truth) 라벨
+  
 `src/`  
 YOLO 학습을 위한 데이터 전처리, 증강, 시각화, 유틸리티 코드가 들어있는 모듈 디렉터리
 - data_preprocessing.py
