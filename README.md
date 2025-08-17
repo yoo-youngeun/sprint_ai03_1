@@ -6,16 +6,24 @@
 ## 📂 프로젝트 구조
 ```
 sprint_ai03_1/
+├── data/
+│   ├── merge_ann/
+│   ├── images/
+│   │   ├── train_images/
+│   │   └── val_images/
+│   └── labels/
+│       ├── train_images/
+│       └── val_images/
 ├── src/
-│ ├── data_preprocessing.py
-│ ├── augmentation.py
-│ ├── utils_io.py
-│ ├── utils_yolo.py
-│ ├── utils_viz.py
-│ ├── train.py
-│ └── predict.py
+│   ├── data_preprocessing.py
+│   ├── augmentation.py
+│   ├── utils_io.py
+│   ├── utils_yolo.py
+│   ├── utils_viz.py
+│   ├── train.py
+│   └── predict.py
 ├── notebooks/
-│ └── data_preprocessing_yye.ipynb
+│   └── data_preprocessing_yye.ipynb
 ├── requirements.txt
 └── data.yaml
 ```
